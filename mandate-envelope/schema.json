@@ -1,0 +1,28 @@
+{
+  "mandate_id": "string",
+  "user_id": "string",
+
+  "goal": {
+    "description": "string",
+    "budget": "number",
+    "currency": "string",
+    "delivery_deadline": "datetime"
+  },
+
+  "merchant_preferences": {
+    "allowed": ["string"],
+    "blocked": ["string"],
+    "require_approval_for_new": "boolean"
+  },
+
+  "execution_rules": {
+    "substitutions_allowed": "boolean",
+    "max_price_variance_percent": "number"
+  },
+
+  "step_up_triggers": {
+    "price_exceeds_budget": "boolean",
+    "new_merchant": "boolean",
+    "delivery_delay": "boolean"
+  }
+}
