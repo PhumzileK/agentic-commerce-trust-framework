@@ -1,0 +1,24 @@
+{
+  "endpoint": "POST /resolve-context",
+
+  "request": {
+    "cart": [
+      {
+        "merchant_id": "string",
+        "product_id": "string",
+        "quantity": "number"
+      }
+    ],
+    "user_location": "string",
+    "mandate_id": "string"
+  },
+
+  "response": {
+    "total": "number",
+    "tax": "number",
+    "shipping": "number",
+    "delivery_date": "datetime",
+    "within_mandate": "boolean",
+    "requires_step_up": "boolean"
+  }
+}
